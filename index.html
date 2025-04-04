@@ -1,347 +1,656 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rumah Makan Minang</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ihsan Baihaqi, Codecech.id, portofolio, digital marketing, website developer, jasa pembuatan website, website profesional, IT Consultant, bisnis IT, software engineering, software developer, teknologi." />
+    <meta name="description" content="Selamat datang di portofolio Ihsan Baihaqi. Seorang Web Developer dan Digital Marketing, serta pendiri bisnis IT Codetech.id yang berfokus pada solusi teknologi inovatif." />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <title>Portfolio | Ihsan Baihaqi</title>
+</head>
+<body oncontextmenu="return false">
 
-    <!-- SWIPER -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
 
-    <!-- Font Awesome CDN Link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+<!-- navbar starts -->
+<header>
+  <a href="#" class="logo">
+    <!-- <i class="fab fa-node-js"></i>  -->
+    Ihsan Baihaqi</a>
 
-    <link
-      href="https://fonts.cdnfonts.com/css/minangkabau-2"
-      rel="stylesheet"
-    />
+  <nav class="navbar">
+      <ul>
+          <li><a class="active" href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">keahlian</a></li>
 
-    <!-- Custom CSS File Link  -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Pendidikan</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
+      </ul>
+  </nav>
 
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <img href="#" src="image/white_logo.png" style="width: 6rem" alt="" />
+  <!-- Language Switcher -->
+  <select id="languageSwitcher">
+      <!--option value="en">English</option-->
+      <option value="id">Bahasa Indonesia</option>
+  </select>
 
-      <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">tentang kami</a>
-        <a href="#menu">menu kami</a>
-        <a href="#book">pesan</a>
-      </nav>
-      <div id="menu-btn" class="fas fa-bars" style="color: white"></div>
-    </header>
+  <div id="menu" class="fas fa-bars"></div>
+</header>
 
-    <!-- HOME -->
-    <section class="home" id="home">
-      <div class="row">
-        <div class="content">
-          <h3 class="font-minang">Rumah Makan Minang Saentis</h3>
-          <a href="#menu" class="btn">beli sekarang</a>
+<!-- navbar ends -->
+
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+    <h2>Hai,<br/> saya <span>Ihsan </span>Baihaqi</h2>
+    <p>saya tertarik pada <span class="typing-text"></span></p>
+    <a href="#about" class="btn"><span>About Me</span>
+      <i class="fas fa-arrow-circle-down"></i>
+    </a>
+    <div class="socials">
+        <ul class="social-icons">
+          <li><a class="telegram" aria-label="Telegram" href="https://t.me/saanmodz" target="_blank"><i class="fab fa-telegram"></i></a></li> 
+          <li><a class="tiktok" aria-label="GitHub" href="https://tiktok.com/@saanmodz" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+          <li><a class="instagram" aria-label="instagram" href="https://instagram.com/ihsaanbaihaqi" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li>
+            <a class="whatsapp" aria-label="WhatsApp" href="https://wa.me/6285765198178" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </li>
+        <!-- <li><a class="dev" aria-label="Dev" href="https://codetech-id.vercel.app" target="_blank"><i class="fab fa-dev"></i></a></li> -->
+        </ul>
+      </div>
+    </div>
+
+</section>
+<!-- hero section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/foto.saya.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>Saya Ihsan Baihaqi</h3>
+        <span class="tag">Digital Marketing | Website Developer | IT Business Development | Data Science. </span>
+        
+        <p>Saya Ihsan Baihaqi, saya lahir di Saentis 04, Maret 2006, saya masih berkuliah di Politeknik Ganesha Medan jurusan Manajemen Informatika. Saya memiliki keahlian di bidang Digital Marketing, Website Developer, IT Business Development & Data Science. </p>
+        
+        <div class="box-container">
+            <!-- <div class="box">
+              <p><span> age: </span> 20</p>
+              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+            </div> -->
+            <div class="box">
+              <p><a href="https://wa.me/6285765198178" target="_blank"><i class="fab fa-whatsapp"></i>0857-6519-8178</a></p>
+              <p><a href="mailto:ihsan104209@gmail.com" target="_blank"><i class="fas fa-envelope"></i>ihsan104209@gmail.com</a></p>
+              <p><a href="https://maps.app.goo.gl/UUxPXfY5PErfKBCB7" target="_blank"><i class="fa fa-map-marked-alt"></i>Dusun I, Musy A saentis, Kec: Percut Seituan</a></p>
+            </div>
         </div>
+      
 
-        <div class="image">
-          <img src="image/toko.jpg" class="toko" alt="" />
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+  <div class="skills-container animate-skills">
+      <!-- Programing -->
+
+      <!-- Web Development -->
+      <div class="skill"><i class="fab fa-html5"></i><span class="skill-name">HTML5</span></div>
+      <div class="skill"><i class="fab fa-css3-alt"></i><span class="skill-name">CSS3</span></div>
+      <div class="skill"><i class="fab fa-js"></i><span class="skill-name">JavaScript</span></div>
+      <div class="skill"><i class="fab fa-react"></i><span class="skill-name">React</span></div>
+      <div class="skill"><i class="fab fa-node-js"></i><span class="skill-name">Node.js</span></div>
+      <div class="skill"><i class="fas fa-wind"></i><span class="skill-name">Tailwind CSS</span></div>
+      <div class="skill"><i class="fab fa-bootstrap"></i><span class="skill-name">Bootstrap</span></div>
+      <div class="skill"><i class="fab fa-php"></i><span class="skill-name">PHP</span></div>
+      <div class="skill"><i class="fab fa-laravel"></i><span class="skill-name">Laravel</span></div>
+      <div class="skill"><i class="fas fa-database"></i><span class="skill-name">MySQL</span></div>
+
+      <!-- Version Control -->
+      <div class="skill"><i class="fab fa-git-alt"></i><span class="skill-name">Git</span></div>
+      
+      <!-- Data Science -->
+      <div class="skill"><i class="fab fa-python"></i><span class="skill-name">Python</span></div>
+      <div class="skill"><i class="fas fa-chart-line"></i><span class="skill-name">Data Science</span></div>
+      <div class="skill"><i class="fas fa-table"></i><span class="skill-name">Pandas</span></div>
+      <div class="skill"><i class="fas fa-square-root-alt"></i><span class="skill-name">NumPy</span></div>
+      <div class="skill"><i class="fas fa-robot"></i><span class="skill-name">TensorFlow</span></div>
+
+      <!-- Jaringan -->
+      <div class="skill"><i class="fas fa-wifi"></i><span class="skill-name">Jaringan</span></div>
+      <div class="skill"><i class="fas fa-server"></i><span class="skill-name">MikroTik</span></div>
+      <div class="skill"><i class="fas fa-network-wired"></i><span class="skill-name">Cisco</span></div>
+
+      <!-- Digital Marketing -->
+      <div class="skill"><i class="fas fa-bullhorn"></i><span class="skill-name">Digital Marketing</span></div>
+      <div class="skill"><i class="fas fa-search-dollar"></i><span class="skill-name">SEO</span></div>
+      <div class="skill"><i class="fas fa-ad"></i><span class="skill-name">Adsense</span></div>
+  </div>
+</section>
+
+<script>
+  // Fungsi untuk mengecek apakah elemen terlihat di viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top <= window.innerHeight * 0.75 && // 75% dari layar terlihat
+    rect.bottom >= 0
+  );
+}
+
+// Fungsi untuk menampilkan animasi jika elemen terlihat
+function handleScrollAnimation() {
+  const skillsSection = document.querySelector(".animate-skills");
+
+  if (isElementInViewport(skillsSection)) {
+    skillsSection.classList.add("show"); // Tambahkan kelas 'show' untuk animasi
+  } else {
+    skillsSection.classList.remove("show"); // Hapus kelas jika keluar dari viewport
+  }
+}
+
+// Event listener untuk mendeteksi scroll
+window.addEventListener("scroll", handleScrollAnimation);
+
+// Jalankan sekali saat halaman pertama kali dimuat
+handleScrollAnimation();
+
+</script>
+
+
+
+
+
+
+
+<!-- work project section starts -->
+<section class="projects-section" id="projects">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projek <span>Saya</span></h2>
+  
+
+  <div class="projects-container animate-project" id="projects-list">
+
+   <!-- Sample website -->
+   <div class="project-card">
+    <img draggable="false" src="./assets/images/projects/Rumah-Makan-Minang.png" alt="Rumah Makan Minang" />
+    <div class="content">
+      <div class="project-title">
+        <h3>Website Rumah Makan Minang</h3>
+      </div>
+      <div class="project-description">
+        <p>Project 1 UMKM Website Rumah Makan Minang.</p>
+        <div class="project-buttons">
+          <a href="https://codetech-id.vercel.app" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+          <a href="https://github.com/asepsurahman03/codetech" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
-      <h1 class="heading">tentang kami<span></span></h1>
+  </div>
 
-      <div class="row">
-        <div class="image">
-          <img src="image/toko.jpg" alt="" />
-        </div>
+<!-- Pagination Navigation -->
+<div class="pagination">
+  <button class="btn" id="prevPage">« Prev</button>
+  <div id="pageNumbers"></div>
+  <button class="btn" id="nextPage">Next »</button>
+</div>
 
+</section>
+
+
+<script>
+// Data proyek (isi dengan proyek yang telah dibuat)
+const projects = [
+  {
+    img: "./assets/images/projects/Rumah-Makan-Minang.png",
+    title: "Website Rumah Makan Minang",
+    desc: "Project 1 UMKM Website Rumah Makan Minang.",
+    viewLink: "/rumah-minang/",
+    codeLink: "#"
+  },
+  {
+    img: "./assets/images/projects/portofolio.png",
+    title: "Website Portofolio",
+    desc: "Project Website Portofolio Ihsan baihaqi",
+    viewLink: "#",
+    codeLink: "#"
+  }
+
+];
+
+// Variabel pagination
+const projectsPerPage = 6;
+let currentPage = 1;
+const totalPages = Math.ceil(projects.length / projectsPerPage);
+
+const projectsContainer = document.getElementById("projects-list");
+const prevPageBtn = document.getElementById("prevPage");
+const nextPageBtn = document.getElementById("nextPage");
+const pageNumbersContainer = document.getElementById("pageNumbers");
+
+// Fungsi untuk menampilkan proyek berdasarkan halaman
+function displayProjects() {
+  projectsContainer.innerHTML = "";
+  const startIndex = (currentPage - 1) * projectsPerPage;
+  const endIndex = startIndex + projectsPerPage;
+  const currentProjects = projects.slice(startIndex, endIndex);
+
+  currentProjects.forEach((project) => {
+    const projectCard = `
+      <div class="project-card">
+        <img draggable="false" src="${project.img}" alt="${project.title}" />
         <div class="content">
-          <p>
-            Kami telah bergerak dibidang makanan Khas Padang sejak tahun 2015.
-            Lokasi kami berada di Pasar 6 Dusun I Musyawarah A Desa Saentis.
-            Kami buka setiap hari mulai pukul 10:00 hingga 21:00. Kami
-            berkotmitmen menyajikan hidangan Khas Padang yang autentik dan lezat
-            dengan harga terjangkau. Kunjungi kami dan nikmati kelezatan kuliner
-            Padang yang khas!.
-          </p>
-          <h3 class="title">Apa yang spesial disini?</h3>
-          <p>
-            Kami menjual berbagai makanan seperti rendang, gulai, sate padang,
-            ikan bakar, dan beberapa hidangan khas padang lainnya yang dimasak
-            dengan teknik khusus untuk menambah citarasa yang unik. Selain itu,
-            kami menawarkan makanan khas padang dengan harga yang terjangkau.
-          </p>
-          <a
-            href="https://maps.app.goo.gl/fjmJTZqVFyBxLdAZ6"
-            target="_blank"
-            class="btn"
-          >
-            Pergi menuju ke alamat
-          </a>
-          <div class="icons-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1737126736351!6m8!1m7!1sBQW1mZbrRH4QBpNPnZ8QcQ!2m2!1d3.662902569246874!2d98.72434971971325!3f346.02873070704135!4f-10.56678972137415!5f0.7820865974627469"
-              width="300"
-              height="200"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-            <div class="box">
-              <div class="box-container">
-                <h1>contact info</h1>
-                <a href="https://wa.me/6281938494548?text=" target="_blank"
-                  ><i class="fab fa-whatsapp"></i> whatsapp</a
-                >
-                <a href="tel:+6281938494548" target="_blank"
-                  ><i class="fas fa-phone"></i> Telephone</a
-                >
-                <a href="mailto:syahputraoni472@gmail.com" target="_blank"
-                  ><i class="fas fa-envelope"></i>E-Mail</a
-                >
-              </div>
+          <div class="project-title">
+            <h3>${project.title}</h3>
+          </div>
+          <div class="project-description">
+            <p>${project.desc}</p>
+            <div class="project-buttons">
+              <a href="${project.viewLink}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+              <a href="${project.codeLink}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    `;
+    projectsContainer.innerHTML += projectCard;
+  });
 
-    <!-- MENU -->
-    <section class="menu" id="menu">
-      <h1 class="heading">Menu Kami</h1>
+  updatePagination();
+}
 
-      <div class="box-container">
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Ayam+Goreng"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_ayamgoreng.jpg" alt="" />
-          <div class="content">
-            <h3>Ayam Goreng</h3>
-            <button class="buy">Rp12.000</button>
-          </div>
-        </a>
+// Fungsi untuk memperbarui pagination
+function updatePagination() {
+  pageNumbersContainer.innerHTML = "";
+  
+  for (let i = 1; i <= totalPages; i++) {
+    const pageNumber = document.createElement("button");
+    pageNumber.classList.add("page-number");
+    if (i === currentPage) {
+      pageNumber.classList.add("active");
+    }
+    pageNumber.textContent = i;
+    pageNumber.addEventListener("click", () => {
+      currentPage = i;
+      displayProjects();
+    });
+    pageNumbersContainer.appendChild(pageNumber);
+  }
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Ayam+Bakar"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_ayambakar.jpg" alt="" />
-          <div class="content">
-            <h3>Ayam Bakar</h3>
-            <button class="buy">Rp12.000</button>
-          </div>
-        </a>
+  prevPageBtn.disabled = currentPage === 1;
+  nextPageBtn.disabled = currentPage === totalPages;
+}
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Ikan+Lele"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_lele.jpg" alt="" />
-          <div class="content">
-            <h3>Lele</h3>
-            <button class="buy">Rp10.000</button>
-          </div>
-        </a>
+// Event listener untuk tombol pagination
+prevPageBtn.addEventListener("click", () => {
+  if (currentPage > 1) {
+    currentPage--;
+    displayProjects();
+  }
+});
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Rendang"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_rendang.jpg" alt="" />
-          <div class="content">
-            <h3>Rendang</h3>
-            <button class="buy">Rp16.000</button>
-          </div>
-        </a>
+nextPageBtn.addEventListener("click", () => {
+  if (currentPage < totalPages) {
+    currentPage++;
+    displayProjects();
+  }
+});
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Ikan+Nila"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_ikannila.jpg" alt="" />
-          <div class="content">
-            <h3>Ikan Nila</h3>
-            <button class="buy">Rp15.000</button>
-          </div>
-        </a>
+// Menampilkan proyek pertama kali
+displayProjects();
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Telur+Dadar"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_telurdadar.jpg" alt="" />
-          <div class="content">
-            <h3>Telur Dadar</h3>
-            <button class="buy">Rp10.000</button>
-          </div>
-        </a>
 
-        <a href="#" class="box">
-          <img src="image/menu_tahu.jpg" alt="" />
-          <div class="content">
-            <h3>Tahu Goreng</h3>
-            <button class="buy">Rp1.000/pcs</button>
-          </div>
-        </a>
 
-        <a href="#" class="box">
-          <img src="image/menu_pergedel.jpg" alt="" />
-          <div class="content">
-            <h3>Pergedel</h3>
-            <button class="buy">Rp1.000/pcs</button>
-          </div>
-        </a>
+// Fungsi untuk mengecek apakah elemen terlihat di viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top <= window.innerHeight * 0.5 && // 30% dari layar terlihat
+    rect.bottom >= 0
+  );
+}
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Ikan+Tongkol"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_ikantongkol.jpg" alt="" />
-          <div class="content">
-            <h3>Ikan Tongkol</h3>
-            <button class="buy">Rp10.000</button>
-          </div>
-        </a>
+// Fungsi untuk menampilkan animasi jika elemen terlihat
+function handleScrollAnimation() {
+  const projectSection = document.querySelector(".animate-project");
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Ati+Ampela"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_atiampela.jpg" alt="" />
-          <div class="content">
-            <h3>Ati Ampela</h3>
-            <button class="buy">Rp10.000</button>
-          </div>
-        </a>
+  if (isElementInViewport(projectSection)) {
+    projectSection.classList.add("show"); // Tambahkan kelas 'show' untuk animasi
+  } else {
+    projectSection.classList.remove("show"); // Hapus kelas jika keluar dari viewport
+  }
+}
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Kepala+ikan"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_kepalaikan.jpg" alt="" />
-          <div class="content">
-            <h3>Kepala Ikan Tongkol</h3>
-            <button class="buy">Rp12.000</button>
-          </div>
-        </a>
+// Event listener untuk mendeteksi scroll
+window.addEventListener("scroll", handleScrollAnimation);
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Ikan+Dencis"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_ikandencis.jpg" alt="" />
-          <div class="content">
-            <h3>Dencis</h3>
-            <button class="buy">Rp10.000</button>
-          </div>
-        </a>
+// Jalankan sekali saat halaman pertama kali dimuat
+handleScrollAnimation();
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Ayam+KFC"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_ayamkfc.jpg" alt="" />
-          <div class="content">
-            <h3>Ayam kfc</h3>
-            <button class="buy">Rp10.000</button>
-          </div>
-        </a>
+</script>
+<!-- Projects Section Ends -->
+<!-- work project section ends -->
 
-        <a
-          href="https://wa.me/6281938494548?text=Hallo+Kak,+saya+mau+pesan%0aNasi+Padang+dengan+lauk+Ikan+Bakar"
-          class="box"
-          target="_blank"
-        >
-          <img src="image/menu_ikanbakar.jpg" alt="" />
-          <div class="content">
-            <h3>Ikan Bakar</h3>
-            <button class="buy">Rp12.000</button>
-          </div>
-        </a>
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> Pendidikan <span>Saya</span></h1>
+
+    <p class="qoute">Pendidikan untuk melatih pikiran untuk berpikir.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./assets/images/sd.png" alt="">
       </div>
-    </section>
+      <div class="content">
+        <a href="#">
+        <h3>SD NEGERI 104209 Saentis </h3>
+      <p>Sekolah Dasar</p>
+      <h4>2012-2018 | Completed</h4>
+      </div>
+    </div>
+  </a>
 
-    <!-- BOOK -->
-    <section class="book" id="book">
-      <h1 class="heading">pesan disini</h1>
+  <div class="box">
+    <div class="image">
+    <img draggable="false" src="./assets/images/smp.png" alt="">
+    </div>
+    <div class="content">
+      <a href="https://smpnegeri3percut.wordpress.com/" target="_blank">
+      <h3>SMP NEGERI 3 Percut Seituan </h3>
+    <p>Sekolah Menengah Pertama</p>
+    <h4>2018-2021 | Completed</h4>
+    </div>
+  </div>
+</a>
+    
+  <div class="box">
+    <div class="image">
+    <img draggable="false" src="./assets/images/smkn1.png" alt="">
+    </div>
+    <div class="content">
+      <a href="https://sekolah.data.kemdikbud.go.id/index.php/chome/profil/ff4eb1b7-a656-4cb6-8e81-ee627bac2216" target="_blank">
+      <h3>SMK NEGERI 1 Percut Seituan </h3>
+    <p>Elektronika Industri</p>
+    <h4>2021-2024 | Completed</h4>
+    </div>
+  </div>
+</a>
 
-      <form action="https://wa.me/6281938494548" method="get">
-        <input type="text" placeholder="Name" id="nama" class="box" />
-        <input type="email" placeholder="Email" id="email" class="box" />
-        <input type="number" placeholder="Number" id="nohp" class="box" />
-        <textarea
-          name="text"
-          placeholder="Message"
-          class="box"
-          id="pesan"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <button type="button" class="btn" onclick="sendMsg()">
-          Kirim Pesan
-        </button>
+<div class="box">
+    <div class="image">
+    <img draggable="false" src="./assets/images/polgan.png" alt="">
+    </div>
+    <div class="content">
+      <a href="" target="_blank">
+      <h3>Politeknik Ganesha Medan </h3>
+    <p>Manajemen Informatika</p>
+    <h4>2024 | Mahasiswa</h4>
+    </div>
+  </div>
+</a>
+
+</div>
+</section>
+<!-- education section ends -->
+
+<!-- Certifications Section Starts -->
+<section class="certifications-section" id="certifications">
+  <h2 class="heading"><i class="fas fa-award"></i> Certifications & <span>Training</span></h2>
+
+  <div class="certifications-container animate-certifications">
+    <div class="cert-card">
+      <h3>Artificial Intelligence</h3>
+      <p>GTTC (Global Training & Test Center)</p>
+      <span>04 Des 2023 - Sekarang</span>
+    </div>
+
+    <div class="cert-card">
+      <h3>IT Specialist Python</h3>
+      <p>GTTC (Global Training & Test Center)</p>
+      <span>01 Des 2023 - Sekarang</span>
+    </div>
+
+    <div class="cert-card">
+      <h3>MTCNA (MikroTik Certified Network Associate)</h3>
+      <p>MikroTik</p>
+      <span>15 Okt 2023 - 15 Okt 2025</span>
+    </div>
+
+    <div class="cert-card">
+      <h3>Cloud Computing</h3>
+      <p>GTTC (Global Training & Test Center)</p>
+      <span>03 Des 2023 - Sekarang</span>
+    </div>
+
+    <div class="cert-card">
+      <h3>British Council English Score</h3>
+      <p>British Council</p>
+      <span>31 Jan 2024 - Sekarang</span>
+    </div>
+
+    <div class="cert-card">
+      <h3>Public Speaking</h3>
+      <p>GTTC (Global Training & Test Center)</p>
+      <span>05 Jul 2024 - Sekarang</span>
+    </div>
+
+    <div class="cert-card">
+      <h3>TPA/TKDA</h3>
+      <p>Koperasi Pegawai Bappenas</p>
+      <span>Ags 2024 - Ags 2026</span>
+    </div>
+
+    <div class="cert-card">
+      <h3>Certificate of Level</h3>
+      <p>Altissia</p>
+      <span>19 Jan 2024 - Sekarang</span>
+    </div>
+  </div>
+</section>
+<!-- Certifications Section Ends -->
+
+
+<script>
+  // Fungsi untuk mengecek apakah elemen terlihat di viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top <= window.innerHeight * 0.75 && // 75% dari layar terlihat
+    rect.bottom >= 0
+  );
+}
+
+// Fungsi untuk menampilkan animasi jika elemen terlihat
+function handleScrollAnimation() {
+  const certSection = document.querySelector(".animate-certifications");
+
+  if (isElementInViewport(certSection)) {
+    certSection.classList.add("show"); // Tambahkan kelas 'show' untuk animasi
+  } else {
+    certSection.classList.remove("show"); // Hapus kelas jika keluar dari viewport
+  }
+}
+
+// Event listener untuk mendeteksi scroll
+window.addEventListener("scroll", handleScrollAnimation);
+
+// Jalankan sekali saat halaman pertama kali dimuat
+handleScrollAnimation();
+
+</script>
+
+
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> kontak <span>Saya</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+      
+      <form id="contact-form">
+        <div class="form-group">
+          <div class="field">
+            <input type="text" id="name" placeholder="Name" required>
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="email" id="email" placeholder="Email" required>
+            <i class='fas fa-envelope'></i>
+          </div>
+          <div class="field">
+            <input type="number" id="phone" placeholder="Phone">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="message">
+            <textarea id="message" placeholder="Message" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+          </div>
+        </div>
+        <div class="button-area">
+          <button type="button" onclick="sendToWhatsApp()">
+            Submit <i class="fa fa-paper-plane"></i>
+          </button>
+        </div>
       </form>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- FOOTER -->
-    <section class="footer">
-      <div class="box-container">
-        <div class="box">
+<script>
+function sendToWhatsApp() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var message = document.getElementById("message").value;
+
+  // Nomor WhatsApp tujuan (tanpa "+" atau "-")
+  var phoneNumber = "6285765198178";
+
+  // Format pesan yang akan dikirim
+  var whatsappMessage = `Halo, saya ${name}.\nEmail: ${email}\nNo. HP: ${phone}\nPesan: ${message}`;
+
+  // Encode pesan agar sesuai dengan format URL
+  var encodedMessage = encodeURIComponent(whatsappMessage);
+
+  // Redirect ke WhatsApp
+  var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  window.open(whatsappURL, "_blank");
+}
+</script>
+<!-- contact section ends -->
+
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Ihsan Baihaqi</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+
+      <div class="box">
           <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-arrow-right"></i> home</a>
-          <a href="#about"><i class="fas fa-arrow-right"></i> tentang kami</a>
-          <a href="#menu"><i class="fas fa-arrow-right"></i> menu kami</a>
-          <a href="#book"><i class="fas fa-arrow-right"></i> pesan</a>
-        </div>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> beranda</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> tentang</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> keahlian</a>
 
-        <div class="box">
+          <a href="#projects"><i class="fas fa-chevron-circle-right"></i> projects</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> pendidikan</a>
+          <a href="#certifications"><i class="fas fa-chevron-circle-right"></i> certifications</a>
+      </div>
+
+      <div class="box">
           <h3>contact info</h3>
-          <a href="https://wa.me/6281938494548?text=" target="_blank"
-            ><i class="fab fa-whatsapp"></i> 081938494548</a
-          >
-          <a href="tel:+6281938494548" target="_blank"
-            ><i class="fas fa-phone"></i> 081938494548</a
-          >
-          <a href="mailto:syahputraoni472@gmail.com" target="_blank"
-            ><i class="fas fa-envelope"></i>syahputraroni472@gmail.com</a
-          >
-        </div>
+          <p> <a href="https://wa.me/6285765198178" target="_blank"><i class="fas fa-phone"></i>0857-6519-8178</a></p>
+          <p> <a href="mailto:ihsan104209@gmail.com" target="_blank"><i class="fas fa-envelope"></i>ihsan104209gmail.com</a></p>
+          <p> <a href="https://maps.app.goo.gl/UUxPXfY5PErfKBCB7" target="_blank"><i class="fas fa-map-marked-alt"></i>Dusun I, Musy A saentis, Kec: Percut Seituan</a></p>
+          <div class="share">
+              <a href="https://t.me/saanmodz" class="fab fa-telegram" aria-label="GitHub" target="_blank"></a>
+              <a href="https://instagram.com/ihsaanbaihaqi" class="fab fa-instagram" aria-label="instagram" target="_blank"></a>
+              <a href="https://tiktok.com/@saanmodz" class="fab fa-tiktok" aria-label="Tiktok" target="_blank"></a>
+          </div>
       </div>
+  </div>
 
-      <div class="credit">
-        <a href="https://polgan.ac.id" target="_blank"
-          >Project 1 <span> Polgan</span> | polgan.ac.id</a
-        >
-      </div>
-    </section>
+  <h1 class="credit">© <a href="#"> Ihsan Baihaqi.</a> All Rights Reserved.</h1>
 
-    <!-- SWIPER -->
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</section>
+<!-- footer section ends -->
 
-    <!-- Custom JS File Link  -->
-    <script src="js/script.js"></script>
-  </body>
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
+</body>
 </html>
