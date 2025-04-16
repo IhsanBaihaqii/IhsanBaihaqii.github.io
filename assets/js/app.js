@@ -17,10 +17,10 @@ particlesJS(
   {
     particles: {
       number: {
-        value: 80,
+        value: 50,
         density: {
           enable: true,
-          value_area: 800,
+          value_area: 1300,
         },
       },
       color: {
@@ -33,7 +33,7 @@ particlesJS(
           color: "#000000",
         },
         polygon: {
-          nb_sides: 5,
+          nb_sides: 3,
         },
         image: {
           src: "img/github.svg",
@@ -70,7 +70,7 @@ particlesJS(
       },
       move: {
         enable: true,
-        speed: 6,
+        speed: 3,
         direction: "none",
         random: false,
         straight: false,
@@ -90,7 +90,7 @@ particlesJS(
           mode: "repulse",
         },
         onclick: {
-          enable: true,
+          enable: false,
           mode: "push",
         },
         resize: true,
