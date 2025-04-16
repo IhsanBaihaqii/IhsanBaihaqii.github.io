@@ -21,7 +21,7 @@ const translations = {
     work: "Pekerjaan",
     experience: "Pengalaman",
     contact: "Kontak",
-    greeting: "Halo, Saya Asep Surahman Sulaeman",
+    greeting: "<h2>Hai,<br/> saya <span>Ihsan Baihaqi</span></h2>",
     description: "Saya tertarik pada <span class='typing-text'></span>",
     aboutMe: "Tentang Saya",
     myEducation: "Pendidikan Saya",
@@ -39,10 +39,10 @@ function changeLanguage(lang) {
     translations[lang].skills;
   document.querySelector('a[href="#education"]').textContent =
     translations[lang].education;
-  document.querySelector('a[href="#work"]').textContent =
-    translations[lang].work;
-  document.querySelector('a[href="#experience"]').textContent =
-    translations[lang].experience;
+  //document.querySelector('a[href="#work"]').textContent =
+  //translations[lang].work;
+  //document.querySelector('a[href="#experience"]').textContent =
+  //translations[lang].experience;
   document.querySelector('a[href="#contact"]').textContent =
     translations[lang].contact;
   document.querySelector(".content h2").innerHTML = translations[lang].greeting;
@@ -139,7 +139,7 @@ document.addEventListener("visibilitychange", function () {
     document.title = "Portfolio | Ihsan Baihaqi";
     $("#favicon").attr("href", "assets/images/favicon.png");
   } else {
-    document.title = "iframeack To Portfolio";
+    document.title = "Come Back To Portfolio";
     $("#favicon").attr("href", "assets/images/favhand.png");
   }
 });
@@ -155,7 +155,7 @@ var typed = new Typed(".typing-text", {
   ],
   loop: true,
   typeSpeed: 50,
-  backSpeed: 25,
+  backSpeed: 30,
   backDelay: 500,
 });
 // <!-- typed js effect ends -->
