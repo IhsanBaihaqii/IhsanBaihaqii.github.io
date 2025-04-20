@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  margin-top: 15vh;
   padding: 0;
   background-color: #1a1a1a;
   display: flex;
@@ -20,7 +19,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 100dvh;
 }
 
 .chat-header {
