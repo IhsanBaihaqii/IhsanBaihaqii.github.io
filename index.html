@@ -234,6 +234,13 @@ handleScrollAnimation();
 // Data proyek (isi dengan proyek yang telah dibuat)
 const projects = [
   {
+    img: "./assets/images/projects/ihsan-ai.png",
+    title: "Chat Ihsan AI",
+    desc: "AI sederhana dengan gaya yang berbeda",
+    viewLink: "/ihsan-ai/",
+    codeLink: "/access-denied/"
+  },
+  {
     img: "./assets/images/projects/Rumah-Makan-Minang.png",
     title: "Website Rumah Makan Minang",
     desc: "Project 1 UMKM Website Rumah Makan Minang.",
@@ -245,13 +252,6 @@ const projects = [
     title: "Website Portofolio",
     desc: "Project Website Portofolio Ihsan baihaqi",
     viewLink: "#home",
-    codeLink: "/access-denied/"
-  },
-  {
-    img: "./assets/images/projects/ihsan-ai.png",
-    title: "Chat Ihsan AI",
-    desc: "AI sederhana dengan gaya yang berbeda",
-    viewLink: "/ihsan-ai/",
     codeLink: "/access-denied/"
   }
 ];
@@ -285,7 +285,6 @@ function displayProjects() {
             <p>${project.desc}</p>
             <div class="project-buttons">
               <a href="${project.viewLink}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-              <a href="${project.codeLink}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
             </div>
           </div>
         </div>
