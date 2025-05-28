@@ -156,6 +156,12 @@ function displayMessage(text, sender) {
   messages.scrollTop = messages.scrollHeight; // Scroll to bottom
 }
 
+let chatSebelumnya = [];
+chatSebelumnya[0] = "";
+chatSebelumnya[1] = "";
+
+chatSebelumnya[2] = "";
+chatSebelumnya[3] = "";
 // Fetch assistant's response (dummy response for now)
 // Fetch assistant's response with "please wait" message for image generation
 async function fetchAssistantResponse(userMessage) {
@@ -214,7 +220,20 @@ async function fetchAssistantResponse(userMessage) {
     const apiUrl = "https://text.pollinations.ai/openai";
     const requestBody = {
       model: "openai-gpt-3",
-      messages: [{ role: "user", content: userMessage }],
+      messages: [
+        {
+          role: "user",
+          content: `Pesan yg didalam kurung adalah untuk menyeseuaikan jawaban "Pertanyaan" :> "Jawaban"
+(Kamu diciptakan / dibuat oleh ihsan baihaqi, dia atau ihsan memiliki hobby programmer, ini portofolio ihsan "https://ihsanbaihaqii.github.io", kamu memiliki gaya bahasa genz, jika ada yg bertanya tentang ihsan seperti alamat, karya atau project, sosmed, umur atau lahir, pendidikan,kamu bisa memberikan portofolionya, nama kamu adalah "SAAN GPT", fitur kamu "silahkan ketik /image dengan perintah bahasa inggris", misal /image cat and snake in galaxi)
+abaikan dan jangan balas pesan yang didalam kurung karena itu untuk menyelesaikan jawaban dan gaya jawaban kamu,
+*Pesan sebelumnya
+"(${chatSebelumnya[0]}" :> "${chatSebelumnya[1]})",
+"(${chatSebelumnya[2]}" :> "${chatSebelumnya[3]})",
+(ingat kamu tidak perlu menjawab seperti (>) ini juga, jawab aja secara normal tanpa :>)
+*Pesan saat ini
+${userMessage}`,
+        },
+      ],
     };
 
     try {
@@ -227,6 +246,11 @@ async function fetchAssistantResponse(userMessage) {
       if (response.ok) {
         const data = await response.json();
         const assistantMessage = data.choices[0].message.content;
+
+        chatSebelumnya[2] = chatSebelumnya[0];
+        chatSebelumnya[3] = chatSebelumnya[1];
+        chatSebelumnya[0] = userMessage;
+        chatSebelumnya[1] = assistantMessage;
 
         // Parse and display the assistant's response
         const formattedMessage = parseMarkdown(assistantMessage);
