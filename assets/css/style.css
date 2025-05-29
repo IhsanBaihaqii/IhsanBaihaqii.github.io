@@ -1025,7 +1025,7 @@ header .navbar ul li a:hover {
   overflow: hidden;
 }
 
-/* Efek Bokeh */
+/* Efek */
 .certifications-section::before {
   content: "";
   position: absolute;
@@ -1122,6 +1122,9 @@ header .navbar ul li a:hover {
 }
 
 /* Teks dalam Kartu */
+.cert-card h3 {
+  width: 80%;
+}
 .cert-card h3 {
   font-size: 20px;
   font-weight: 600;
