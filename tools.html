@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Endpoint Tool</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .radios {
+      margin-bottom: 15px;
+    }
+    .radios label {
+      margin-right: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .output {
+      margin-top: 20px;
+      padding: 15px;
+      background: #e9ecef;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Test Endpoint</h2>
+  <input type="text" id="urlInput" placeholder="https://example.com/api" />
+
+  <div class="radios">
+    <label><input type="radio" name="method" value="fetch" checked> Fetch</label>
+    <label><input type="radio" name="method" value="xhr"> XMLHttpRequest</label>
+    <label><input type="radio" name="method" value="jquery"> jQuery</label>
+  </div>
+
+  <button onclick="startRequest()">Start</button>
+
+  <div class="output" id="output">Output akan muncul di sini.</div>
+</div>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+  function startRequest() {
+    const url = document.getElementById('urlInput').value.trim();
+    const method = document.querySelector('input[name="method"]:checked').value;
+    const output = document.getElementById('output');
+
+    if (!url) {
+      output.textContent = '❌ URL tidak boleh kosong.';
+      return;
+    }
+
+    output.textContent = '⏳ Sedang memproses...';
+
+    if (method === 'fetch') {
+      fetch(url)
+        .then(res => res.text().then(body => {
+          output.textContent = `✅ [Fetch] ${res.status} ${res.statusText}\n\n${body}`;
+        }))
+        .catch(err => {
+          output.textContent = `❌ [Fetch] Error: ${err.message}`;
+        });
+
+    } else if (method === 'xhr') {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', url, true);
+      xhr.onload = function () {
+        output.textContent = `✅ [XHR] ${xhr.status} ${xhr.statusText}\n\n${xhr.responseText}`;
+      };
+      xhr.onerror = function () {
+        output.textContent = `❌ [XHR] Request error`;
+      };
+      xhr.send();
+
+    } else if (method === 'jquery') {
+      $.get(url)
+        .done(function(data, status, xhr) {
+          output.textContent = `✅ [jQuery] ${xhr.status} ${xhr.statusText}\n\n${data}`;
+        })
+        .fail(function(xhr, status, err) {
+          output.textContent = `❌ [jQuery] ${xhr.status} ${xhr.statusText || err}`;
+        });
+    }
+  }
+</script>
+
+</body>
+</html>
