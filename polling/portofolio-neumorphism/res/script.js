@@ -107,7 +107,7 @@ const education = [
   },
 ];
 
-// Certifications Data
+// Certifications Data.
 const certifications = [
   {
     title: "Introduction MySQL",
