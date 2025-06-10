@@ -117,6 +117,13 @@ const certifications = [
       "https://api2.sololearn.com/v2/certificates/CC-EBHMMIJH/image/png?t=638839987292660800",
   },
   {
+    title: "Intermediate MySQL",
+    description: "Sololearn",
+    year: "10 Juni 2025 - Sekarang",
+    image:
+      "https://api2.sololearn.com/v2/certificates/CC-QESVGTAL/image/png?t=638851371745931050",
+  },
+  {
     title: "Introduction C++",
     description: "Sololearn",
     year: "1 Juni 2025 - Sekarang",
