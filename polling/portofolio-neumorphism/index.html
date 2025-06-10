@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ihsan Baihaqi - Portofolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="res/style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Ihsan Baihaqi</div>
+          <div class="hamburger" id="hamburger-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="nav-links" id="nav">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <a
+      class="back-vote"
+      href="/"
+      style="
+        position: fixed;
+        top: 85%;
+        right: 5%;
+        color: azure;
+        text-decoration: none;
+        background-color: blue;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 50%;
+        box-shadow: 3px 3px 10px rgb(0, 0, 0);
+        padding: 5px;
+        z-index: 999;
+      "
+      >Voting</a
+    >
+    <!-- Home Section -->
+    <section id="home">
+      <div class="container">
+        <div class="home-content">
+          <h1>Hai, Saya Ihsan Baihaqi</h1>
+          <p>Saya tertarik pada <span class="typing-text"></span></p>
+          <a href="#about" class="btn">Tentang Saya</a>
+          <div class="social-icons">
+            <a href="https://wa.me/yournumber" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="https://instagram.com/yourusername" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://tiktok.com/@yourusername" target="_blank"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="https://tiktok.com/@yourusername" target="_blank"
+              ><i class="fab fa-telegram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="res/img/san1.jpg" alt="Ihsan Baihaqi" />
+          </div>
+          <div class="about-text">
+            <h2>Saya Ihsan Baihaqi</h2>
+            <h3>
+              Digital Marketing | Website Developer | IT Business Development |
+              Data Science
+            </h3>
+            <p>
+              Saya Ihsan Baihaqi, saya lahir di Saentis 04, Maret 2006, saya
+              masih berkuliah di Politeknik Ganesha Medan jurusan Manajemen
+              Informatika. Saya memiliki keahlian di bidang Digital Marketing,
+              Website Developer, IT Business Development & Data Science.
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
+              harum aut illum ipsam, officia aliquid quod itaque deserunt et
+              voluptates, ratione molestiae facilis laboriosam doloremque
+              maiores nulla cum, vitae doloribus!.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container" id="skillsContainer">
+          <!-- Skills will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-container" id="projectsContainer">
+          <!-- Projects will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-container" id="educationContainer">
+          <!-- Education will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+      <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-container" id="certificationsContainer">
+          <!-- Certifications will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Ihsan Baihaqi. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="res/script.js"></script>
+    <script>
+      // Mobile menu toggle
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const navMenu = document.getElementById("nav");
+
+      hamburgerBtn.addEventListener("click", () => {
+        hamburgerBtn.classList.toggle("active");
+        navMenu.classList.toggle("show");
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll("#nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburgerBtn.classList.remove("active");
+          navMenu.classList.remove("show");
+        });
+      });
+    </script>
+  </body>
+</html>

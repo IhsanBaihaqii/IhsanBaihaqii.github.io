@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Lirik Lagu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .result {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Cari Lirik Lagu</h2>
+        <input type="text" id="judulLagu" placeholder="Masukkan judul lagu...">
+        <button onclick="cariLirik()">Cari</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function cariLirik() {
+            const judul = document.getElementById('judulLagu').value;
+            const url = `https://api.vreden.my.id/api/lirik?lagu=${encodeURIComponent(judul)}`;
+            const xhr = new XMLHttpRequest();
+
+            xhr.open("GET", url, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        try {
+                            const data = JSON.parse(xhr.responseText);
+                            if (data.status === 200 && data.result.status) {
+                                const { judul, artis, album, lirik } = data.result;
+                                document.getElementById('result').innerHTML = `
+                                    <h3>${judul}</h3>
+                                    <p><strong>Artis:</strong> ${artis}</p>
+                                    <p><strong>Album:</strong> ${album}</p>
+                                    <pre>${lirik}</pre>
+                                `;
+                            } else {
+                                document.getElementById('result').innerHTML = `<p>Lirik tidak ditemukan.</p>`;
+                            }
+                        } catch (error) {
+                            document.getElementById('result').innerHTML = `<p>Error parsing data: ${error.message}</p>`;
+                        }
+                    } else {
+                        document.getElementById('result').innerHTML = `<p>Terjadi kesalahan: HTTP status ${xhr.status}</p>`;
+                    }
+                }
+            };
+            xhr.onerror = function () {
+                document.getElementById('result').innerHTML = `<br>${url}</br><p>Terjadi kesalahan jaringan atau server.</p>`;
+            };
+            xhr.send();
+        }
+    </script>
+
+</body>
+</html>
