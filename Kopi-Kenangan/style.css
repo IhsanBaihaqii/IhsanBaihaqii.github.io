@@ -1,0 +1,679 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/*Navbar*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(1, 1, 1, 0.8);
+  border-bottom: 1px solid #513c28;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+nav .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+span {
+  color: var(--primary);
+}
+nav .navbar a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+nav .navbar a:hover {
+  color: var(--primary);
+}
+nav .navbar a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+nav .navbar a:hover::after {
+  transform: scaleX(0.5);
+}
+nav .extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 2rem;
+}
+nav .extra a:hover {
+  color: var(--primary);
+}
+#shooping-btn {
+  position: relative;
+}
+#shooping-btn span {
+  color: white;
+  font-size: 0.8rem;
+  display: inline-block;
+  padding: 1px 5px;
+  background-color: red;
+  border-radius: 6px;
+  position: absolute;
+  top: 0px;
+  right: -10px;
+}
+#hamburger {
+  display: none;
+}
+/* Navbar Search */
+nav .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+nav .search-form.active {
+  transform: scaleY(1);
+}
+nav .search-form input[type="search"] {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--bg);
+  padding: 1rem;
+}
+nav .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--bg);
+}
+
+/* Shooping Cart */
+.shopping {
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  height: 100vh;
+  width: 35rem;
+  padding: 0 1.5rem;
+  color: var(--bg);
+  background-color: #fff;
+  transition: 0.3s;
+}
+.shopping.active {
+  right: 0;
+}
+.shopping .item {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #666;
+  position: relative;
+}
+.shopping .item img {
+  height: 5rem;
+  border-radius: 50%;
+}
+.shopping .item h3 {
+  font-size: 1.4rem;
+}
+.shopping .container {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130%;
+}
+.shopping span {
+  color: #222;
+  font-size: 1.2rem;
+}
+.shopping .item .price {
+}
+.shopping .item #remove,
+.shopping .item #add {
+  display: inline-block;
+  padding: 2px 5px;
+  cursor: pointer;
+  margin: 0 8px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.shopping h4,
+.shopping h4 span {
+  font-size: 1.6rem;
+  margin-top: -1rem;
+  text-align: center;
+}
+/* Checkout Form */
+.form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px dashed black;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.form-container form {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-container h5 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.form-container label {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+}
+.form-container input {
+  background-color: #ddd;
+  padding: 5px;
+  font-size: 1rem;
+  width: 70%;
+}
+.form-container button {
+  padding: 6px 14px;
+  background-color: royalblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+/*Hero*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("img/bg-kopi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+}
+.hero .mask {
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: url("img/bg.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  mask-image: url("img/bg.svg");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  mask-position: center;
+}
+.hero main {
+  padding: 1.4rem 7%;
+  /* max-width: 60rem; */
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 130px;
+}
+.hero main h1 {
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+.hero main p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 100;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  mix-blend-mode: difference;
+}
+.hero main a {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/*About*/
+.about,
+.menu,
+.produk,
+.contact {
+  padding: 8rem 7% 1.4rem;
+}
+.about h2,
+.menu h2,
+.produk h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+.about .row {
+  display: flex;
+}
+.about .row .about-img {
+  flex: 1 1 45rem;
+  mask-image: url("img/splash.svg");
+  mask-size: 50%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+.about .row .about-img img {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+/*Menu*/
+.menu h2 {
+  margin-top: 1rem;
+}
+.menu p,
+.produk p,
+.contact p {
+  text-align: center;
+  max-width: 41rem;
+  margin: auto;
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+  gap: 25px;
+}
+.menu .row .menu-cart {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.menu .row .menu-cart img {
+  border-radius: 50%;
+  width: 200px;
+}
+.menu .row .menu-cart .title {
+  margin: 1rem auto 1.5rem;
+}
+.menu .row .menu-cart .price {
+  background-color: var(--primary);
+  max-width: 50%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+/* Produk */
+.produk .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+.produk .produk-card {
+  text-align: center;
+  border: 1px solid #666;
+  padding: 2rem;
+}
+.produk .produk-icon {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.produk .produk-icon a {
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  margin: 0.3rem;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.produk .produk-icon a:hover {
+  background-color: var(--primary);
+}
+.produk .produk-img {
+  padding: 1rem 0;
+}
+.produk .produk-img img {
+  height: 25rem;
+  width: auto;
+}
+.produk .produk-content h3 {
+  font-size: 2rem;
+}
+.produk .produk-stars,
+.modal .produk-stars {
+  font-size: 1.7rem;
+  padding: 0.8rem;
+  color: var(--primary);
+}
+.produk .price,
+.modal .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.produk .price span {
+  color: white;
+}
+
+/*Kontak*/
+.contact .row {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: #222;
+  padding-left: 15px;
+}
+.contact .row iframe {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding-left: 2rem;
+}
+.contact .row .group i {
+  font-size: 2rem;
+  color: #ddd;
+}
+.contact .row form .group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #fff;
+}
+.contact .row form button {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: white;
+  background-color: var(--primary);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+footer .social {
+  padding: 1rem 0 2rem;
+  font-size: 1.5rem;
+}
+footer .social a {
+  color: white;
+  margin: 1rem;
+}
+footer .social a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+footer .links {
+  margin-bottom: 1.4rem;
+}
+footer .links a {
+  color: white;
+  padding: 0.7rem 1rem;
+}
+footer .credit {
+  font-size: 1.1rem;
+}
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.68);
+  align-items: center;
+  justify-content: center;
+}
+.modal .container {
+  position: relative;
+  background-color: #fefefe;
+  color: var(--bg);
+  margin: 15% auto;
+  padding: 1.2rem;
+  border: 1px solid #666;
+  width: 80%;
+  animation: animateModal 0.5s;
+  min-height: min-content;
+}
+@keyframes animateModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.modal .container > a {
+  position: absolute;
+  right: 1rem;
+  font-size: 2.4rem;
+}
+.modal .container > a:hover {
+  color: var(--primary);
+}
+.modal .modal-content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.modal .modal-content img {
+  height: 20rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.modal .modal-content p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-top: 1.2rem;
+}
+.modal .modal-content a span {
+  color: #fff;
+}
+.modal .modal-content a {
+  display: flex;
+  gap: 1rem;
+  width: 12rem;
+  background-color: var(--primary);
+  color: #fff;
+  margin-top: 1rem;
+  padding: 1rem 1.6rem;
+}
+.modal .price span {
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: var(--bg);
+}
+
+/*Media Query*/
+/*Laptop*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/*Tablet*/
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger {
+    display: inline-block;
+  }
+  nav .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s linear;
+  }
+  nav .navbar.active {
+    right: 0;
+  }
+  nav .navbar a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  nav .navbar a::after {
+    transform-origin: 0;
+  }
+  nav .navbar a:hover::after {
+    transform: scaleX(0.2);
+  }
+  nav .search-form {
+    width: 90%;
+    right: 2rem;
+  }
+
+  /*about*/
+  .about .row {
+    flex-wrap: wrap;
+  }
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .about .row .content {
+    padding: 0;
+  }
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .about .row .content p {
+    font-size: 1.6rem;
+  }
+
+  /*Menu*/
+  .menu p {
+    font-size: 1.2rem;
+  }
+
+  /*Contact*/
+  .contact .row {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .contact .row iframe {
+    height: 30rem;
+  }
+  .contact .row form {
+    padding-top: 0;
+  }
+
+  /* Modal */
+  .modal .modal-content {
+    flex-wrap: wrap;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
