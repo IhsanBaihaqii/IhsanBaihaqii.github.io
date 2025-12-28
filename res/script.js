@@ -1,37 +1,3 @@
-const projectsData = [
-  {
-    title: "Saan Project",
-    description:
-      "Saan Project memungkinkan kamu melihat beberapa rencana project yang akan dibuat oleh Ihsan Baihaqi",
-    image: "res/img/projects/saan-project.png",
-    link: "#",
-    tags: ["Web", "Planning"],
-  },
-  {
-    title: "Saan GPT",
-    description:
-      "AI chatbot project dengan kemampuan conversation yang advanced",
-    image: "res/img/projects/saan-gpt.png",
-    link: "#",
-    tags: ["AI", "Chatbot"],
-  },
-  {
-    title: "Ihsan AI",
-    description: "Artificial Intelligence platform untuk berbagai kebutuhan",
-    image: "res/img/projects/ihsan-ai.png",
-    link: "#",
-    tags: ["AI", "Platform"],
-  },
-  {
-    title: "UMKM Rumah Makan",
-    description:
-      "Website untuk UMKM rumah makan dengan sistem pemesanan online",
-    image: "res/img/projects/rumah-minang.png",
-    link: "#",
-    tags: ["Web", "UMKM"],
-  },
-];
-
 const educationData = [
   {
     school: "Politeknik Ganesha Medan",
