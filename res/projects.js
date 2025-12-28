@@ -40,7 +40,7 @@ function populateProjects() {
               <h3 class="text-xl font-bold mb-2 text-gray-100">${
                 project.title
               }</h3>
-              <p class="text-gray-300 mb-4">${project.description}</p>
+              <p class="text-gray-300 mb-4 text-sm">${project.description}</p>
               <div class="flex flex-wrap gap-2 mb-4">
                 ${project.tags
                   .map(
@@ -52,12 +52,12 @@ function populateProjects() {
               <div class="flex gap-4">
                 <a href="https://github.com/ihsanbaihaqii/${project.link}"
                 target="_blank"
-                class="inline-block bg-transparent border border-gray-600 hover:border-white text-gray-400 hover:text-white px-6 py-2 rounded-2xl font-semibold hover:shadow-lg transition-all duration-300">
+                class="inline-block bg-transparent border border-gray-600 hover:border-white text-gray-400 hover:text-white px-6 py-2 rounded-2xl font-semibold text-sm hover:shadow-lg transition-all duration-300">
                     View Code
                 </a>
                 <a href="http://ihsanbaihaqii.github.io/${project.link}"
                 target="_blank"
-                class="inline-block bg-transparent border border-purple-800 hover:border-purple-500 text-gray-400 hover:text-white px-6 py-2 rounded-2xl font-semibold hover:shadow-lg hover:shadow-purple-900/30 transition-all duration-300">
+                class="inline-block bg-transparent border border-purple-800 hover:border-purple-500 text-gray-400 hover:text-white px-6 py-2 rounded-2xl font-semibold text-sm hover:shadow-lg hover:shadow-purple-900/30 transition-all duration-300">
                     View Project
                 </a>
                </div>
