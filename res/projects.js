@@ -6,6 +6,21 @@ const projectsData = [
     link: "Jam-Analog",
     tags: ["HTML", "CSS", "JavaScript", "Jam Analog"],
   },
+  {
+    title: "Kopi Kenangan Senja",
+    description: "Website Kopi Kenangan Senja",
+    image:
+      "https://raw.githubusercontent.com/IhsanBaihaqii/Kenangan-Senja/refs/heads/main/screenshoot/hasil/Screenshot%202025-06-24%20104133.png",
+    link: "Kenangan-Senja",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "alpine JS",
+      "Bootstrap",
+      "Kopi Kenangan Senja",
+    ],
+  },
 ];
 
 // Populate Projects
