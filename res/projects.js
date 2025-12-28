@@ -1,38 +1,10 @@
 const projectsData = [
   {
-    title: "Saan Project",
-    description:
-      "Saan Project memungkinkan kamu melihat beberapa rencana project yang akan dibuat oleh Ihsan Baihaqi",
-    image: "res/img/projects/saan-project.png",
-    view_project: "#",
-    view_code: "#",
-    tags: ["Web", "Planning"],
-  },
-  {
-    title: "Saan GPT",
-    description:
-      "AI chatbot project dengan kemampuan conversation yang advanced",
-    image: "res/img/projects/saan-gpt.png",
-    view_project: "#",
-    view_code: "#",
-    tags: ["AI", "Chatbot"],
-  },
-  {
-    title: "Ihsan AI",
-    description: "Artificial Intelligence platform untuk berbagai kebutuhan",
-    image: "res/img/projects/ihsan-ai.png",
-    view_project: "#",
-    view_code: "#",
-    tags: ["AI", "Platform"],
-  },
-  {
-    title: "UMKM Rumah Makan",
-    description:
-      "Website untuk UMKM rumah makan dengan sistem pemesanan online",
-    image: "res/img/projects/rumah-minang.png",
-    view_project: "#",
-    view_code: "#",
-    tags: ["Web", "UMKM"],
+    title: "Jam Analog",
+    description: "Jam Analog Dengan Foto Beliau Yang Sedang Menunjuk",
+    image: "res/img/projects/Jam-Analog.png",
+    link: "Jam-Analog",
+    tags: ["HTML", "CSS", "JavaScript", "Jam Analog"],
   },
 ];
 
@@ -63,14 +35,14 @@ function populateProjects() {
                   .join("")}
               </div>
               <div class="flex gap-4">
-                <a href="${
-                  project.view_code
-                }" class="inline-block bg-transparent border border-gray-600 hover:border-white text-gray-400 hover:text-white px-6 py-2 rounded-2xl font-semibold hover:shadow-lg transition-all duration-300">
+                <a href="https://github.com/ihsanbaihaqii/${project.link}"
+                target="_blank"
+                class="inline-block bg-transparent border border-gray-600 hover:border-white text-gray-400 hover:text-white px-6 py-2 rounded-2xl font-semibold hover:shadow-lg transition-all duration-300">
                     View Code
                 </a>
-                <a href="${
-                  project.view_project
-                }" class="inline-block bg-transparent border border-purple-800 hover:border-purple-500 text-gray-400 hover:text-white px-6 py-2 rounded-2xl font-semibold hover:shadow-lg hover:shadow-purple-900/30 transition-all duration-300">
+                <a href="http://ihsanbaihaqii.github.io/${project.link}"
+                target="_blank"
+                class="inline-block bg-transparent border border-purple-800 hover:border-purple-500 text-gray-400 hover:text-white px-6 py-2 rounded-2xl font-semibold hover:shadow-lg hover:shadow-purple-900/30 transition-all duration-300">
                     View Project
                 </a>
                </div>
