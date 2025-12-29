@@ -1,5 +1,13 @@
 const projectsData = [
   {
+    title: "itshanApp",
+    description: "Asistant AI yang mampu membantu anda (Demo)",
+    image:
+      "https://raw.githubusercontent.com/IhsanBaihaqii/itshanApp/refs/heads/main/image.png",
+    link: "itshanApp",
+    tags: ["HTML", "CSS", "JavaScript", "AI"],
+  },
+  {
     title: "Jam Analog",
     description: "Jam Analog Dengan Foto Beliau Yang Sedang Menunjuk",
     image: "res/img/projects/Jam-Analog.png",
